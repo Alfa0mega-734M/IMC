@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#03C4A1">
+
+  <link rel="shortcut icon" href="img/calculadora.png">
+  <link rel="stylesheet" href="estilos/global.css">
+  <link rel="stylesheet" href="estilos/calc.css">
+
+  <title>IM</title>
+</head>
+<body>
+  <!-- Main -->
+  <div class="main">
+    <!-- Content -->
+    <div class="content">      
+      <!-- Div-Input -->
+      <div class="input">
+        <p>Complete los campos a continuación y vea su resultado<br>
+        <a class="enlace" href="/">Regresar</a>
+        </p>    
+        
+        <!-- Form -->
+        <form action="" id="form">
+          <input type="number" max="200" name="peso" id="peso" required spellcheck="false" placeholder="Peso (Kg)">         
+          <input type="number" max="200" name="altura" id="altura" required spellcheck="false" placeholder="Altura (cm)">
+          <input type="submit" value="Calcular" id="submit"/>
+        </form>
+        
+      </div> <!--Div-Input closure-->
+
+      <!-- Results -->
+      <div class="results" id="results">
+
+        <!-- Card -->
+        <div class="card default">
+          <span class="title">Resultado de su IMC</span>
+          <span class="score">-</span>
+          <span class="status">Estado</span>
+        </div>
+
+        <!-- Table -->
+        <div class="table">
+          <table>
+            <tr>
+              <td class="level">Bajo peso</td>
+              <td>< 18.5</td>
+            </tr>
+
+            <tr>
+              <td class="level">Peso Normal</td>
+              <td>18.5 - 24.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Sobrepeso</td>
+              <td>25 - 29.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obeso</td>
+              <td>> 30 </td>
+            </tr>
+            
+          </table>
+
+        </div>
+      </div> <!--Results closure-->
+
+      
+    </div> <!--Content closure-->
+  </div> <!--Main closure-->
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
